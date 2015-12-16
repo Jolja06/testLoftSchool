@@ -28,25 +28,40 @@ header div img{
 	margin:35px 0 0 20px;
 }
 .vk{
-	background-image: url(../img/socialbut.jpg);
-	background-position: -71px 0;
-}
-.tw{
-	background-image: url(../img/socialbut.jpg);
-	background-position: -142px 0;
+	background-image: url(../img/sprite.jpg);
+	background-position: 262px 0;
 }
 .vk:hover{
-	background-image: url(../img/socialbut.jpg);
-	background-position: 0px 0;
+	background-image: url(../img/sprite.jpg);
+	background-position: 262px -54px;
+	cursor: pointer;
+}
+.tw{
+	background-image: url(../img/sprite.jpg);
+	background-position: 191px 0;
+}
+.tw:hover{
+	background-image: url(../img/sprite.jpg);
+	background-position: 191px -54px;
 	cursor: pointer;
 }
 .fb{
-	background-image: url(../img/socialbut.jpg);
-	background-position: -213px 0;
+	background-image: url(../img/sprite.jpg);
+	background-position: 120px 0;
+}
+.fb:hover{
+	background-image: url(../img/sprite.jpg);
+	background-position: 120px -54px;
+	cursor: pointer;
 }
 .gh{
-	background-image: url(../img/socialbut.jpg);
-	background-position: -283px 0;
+	background-image: url(../img/sprite.jpg);
+	background-position: 49px 0;
+}
+.gh:hover{
+	background-image: url(../img/sprite.jpg);
+	background-position: 49px -54px;
+	cursor: pointer;
 }
 .social a{
 	display: block;
@@ -67,33 +82,38 @@ nav{
 	background-color: #eff3f7;
 	border-radius: 5px;
 	float: left;
-	margin-right: 60px;
+	margin: 0 60px 0 0;
 
 }
-nav a{
-	display: block;
-	text-decoration: none;
-	color: #959aa8;
-	padding: 25px;	
+ul.menu{
+	margin: 0;
+	padding: 0;
 }
-#activ{
+ul.menu li{
+	padding: 20px;
+	color: #959aa8;
+	border-bottom: 2px solid #eff3f7;
+	font-size: 21px;
+}
+ul.menu li:hover{
 	color: #3ba8c0;
 	border-bottom: 2px solid #3ba8c0;
+	cursor: pointer;
 }
-.menu{
+ul.menu li.h-menu{
 	background-color: #3ba8c0;
 	border-radius: 3px 3px 0 0;
-	color: #fff;
-	font-size: 23px;
-	cursor: default;
+	font-size: 23px ;
+	color: #fff ;
+	cursor: default ;
+	border-bottom: none ;
 }
 article{
 	background-color: #eff3f7;
 	border-radius: 3px;
 	float: right;
 	width: 650px;
-	margin-bottom: 25px;
-	padding-bottom: 30px
+	margin: 0 0 25px 0;
 	
 }
 h1{
@@ -104,41 +124,30 @@ h1{
 	margin: 0;
 	padding: 25px;
 }
-li{
-	list-style: none;
-	background: url(../img/case.jpg) no-repeat;
-	padding:0 0 25px 74px;
-	color: #4a545d;
+ul{
+	list-style:none;
+	margin: 30px 0;
 }
-li:last-child{
-	list-style: none;
-	background: url(../img/case.jpg) no-repeat;
-	padding:0 0 0 74px;
-	color: #4a545d;
+ul.page li{
+	padding: 0 0 25px 25px;
 }
-li.hat{
-	list-style: none;
-	background: url(../img/hat.jpg) no-repeat;
-	padding:0 0 25px 74px;
-	color: #4a545d;
+ul.page li:before{
+	content: "";
+	float: left;
+	width: 60px;
+	height: 50px;
+	background: url(../img/sprite.jpg);
+	margin: 0 10px 0 0;
+	
 }
-li.hat:last-child{
-	list-style: none;
-	background: url(../img/hat.jpg) no-repeat;
-	padding:0 0 0 74px;
-	color: #4a545d;
+ul.page li.case:before{
+	background-position: 326px -59px;
 }
-li.list{
-	list-style: none;
-	background: url(../img/list.jpg) no-repeat;
-	padding:0 0 25px 74px;
-	color: #4a545d;
+ul.page li.hat:before{
+	background-position: 451px -63px;
 }
-li.list:last-child{
-	list-style: none;
-	background: url(../img/list.jpg) no-repeat;
-	padding:0 0 0 74px;
-	color: #4a545d;
+ul.page li.list:before{
+	background-position: 391px -61px;
 }
 footer{
 	background-color: #eff3f7;
