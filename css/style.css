@@ -5,6 +5,14 @@
 		 url('../fonts/ArialNarrow.ttf') format('truetype'), 
 		 url('../fonts/ArialNarrow.woff') format('woff');
 }
+html, body{
+	height: 100%;
+}
+.wrap{
+	width: 100%;
+	min-width: 960px;
+	height: 100%;
+}
 body{
 	font-family: 'Arial Narrow';
 	font-size: 17px;
@@ -69,7 +77,7 @@ header div img{
 }
 section{
 	background-image: url(../img/bg.png);
-	background-repeat: repeat; 
+	background-repeat: repeat;
 }
 section div{
 	width: 960px;
@@ -77,13 +85,15 @@ section div{
 	padding: 40px 0 20px 0;
 	overflow: auto;
 }
+aside{
+	float: left;
+	overflow: auto;
+}
 nav{
 	width: 250px;
 	background-color: #eff3f7;
 	border-radius: 5px;
-	float: left;
 	margin: 0 60px 0 0;
-
 }
 ul.menu{
 	margin: 0;
@@ -92,12 +102,14 @@ ul.menu{
 ul.menu li{
 	padding: 20px;
 	color: #959aa8;
-	border-bottom: 2px solid #eff3f7;
+	border-bottom: 2px solid #3ba8c0;
 	font-size: 21px;
+}
+ul.menu li:last-child{
+	border-bottom: none;
 }
 ul.menu li:hover{
 	color: #3ba8c0;
-	border-bottom: 2px solid #3ba8c0;
 	cursor: pointer;
 }
 ul.menu li.h-menu{
@@ -110,6 +122,7 @@ ul.menu li.h-menu{
 }
 article{
 	background-color: #eff3f7;
+	color: #4a545d;
 	border-radius: 3px;
 	float: right;
 	width: 650px;
@@ -126,7 +139,7 @@ h1{
 }
 ul{
 	list-style:none;
-	margin: 30px 0;
+	margin: 30px 0 30px 70px;
 }
 ul.page li{
 	padding: 0 0 25px 25px;
@@ -137,7 +150,7 @@ ul.page li:before{
 	width: 60px;
 	height: 50px;
 	background: url(../img/sprite.jpg);
-	margin: 0 10px 0 0;
+	margin: 0 10px 0 -70px;
 	
 }
 ul.page li.case:before{
@@ -156,4 +169,5 @@ footer{
 	font-size: 13px;
 	text-align: center;
 	line-height: 75px;
+	width: 100%;
 }
