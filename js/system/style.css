@@ -1,0 +1,191 @@
+body{
+	background: url('src/bg.png');
+	font-family: Verdana;
+}
+.wrapper {
+	width: 1080px;
+	margin: 0 auto;
+}
+.canvas {
+	width: 1000px;
+	float: left;
+	position: relative;
+}
+	.canvas__scene {
+		width: 1000px;
+		height: 500px;
+		background: url('src/sky.png');
+		background-size: cover;
+		display: none;
+		float: left;
+	}
+		.canvas__scene_active {
+			display: block;
+		}
+	.canvas__scene:after {
+		content: '';
+		position: absolute;
+		width: 1000px;
+		height: 150px;
+		bottom: 0;
+		left: 0;
+		background: url('src/sand.jpg');
+	}
+.model_character{
+	width: 69px;
+	height: 171px;
+	background: url("src/gender.png") no-repeat;
+	background-size: contain;
+	position: absolute;
+	left: 20px;
+	bottom: 75px;
+	z-index: 10;
+}
+	.model_character_male{	
+		background: url("src/male.png") no-repeat;
+	}
+	.model_character_female{	
+		background: url("src/female.png") no-repeat;
+	}
+.model_teacher{
+	width: 67px;
+	height: 169px;
+	position: absolute;
+	right: 40px;
+	bottom: 80px;
+	background: url("src/doc.png");
+	z-index: 10;
+	margin: 0;
+	text-outline: none;
+}
+
+.text{
+	position: absolute;
+	padding: 15px;
+	background: #fff;
+	border: 1px dashed red;
+	display: none;
+	z-index: 9;
+	font-size: 14px;
+}
+.text_character{
+	width: 200px;
+	left: 60px;
+    bottom: 265px;
+}
+.text_teacher{
+	width: 350px;
+	right: 30px;
+	bottom: 260px;
+}
+
+
+.nav {
+	font-size: 30px;
+	display: none;
+	background: rgba(0, 0, 0, 0.17);
+	width: 40px;
+	height: 500px;
+	text-align: center;
+	float: left;
+	line-height: 500px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.check{
+	position: absolute;
+	bottom: 10px;
+	left: 415px;
+	background: #E42E2E;
+	padding: 10px 15px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	border-bottom: 2px solid #0d0d0d;
+	z-index: 10;
+}
+
+
+
+
+.logo{
+	width: 322px;
+	height: 55px;
+	margin-top: 20px;
+	margin-right: 40px;
+	float: left;
+	background: url('src/logo.png');
+}
+
+.page__title {
+	color: #382314;
+	float: none;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.page__title__text{
+	float: left;
+}
+.page__title h1{
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+.page__title p{
+	color: #333;
+	font-size: 16px;
+}
+
+.task-num {
+	margin-top: 20px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+
+/*task 2*/
+
+#coin{
+	position: absolute;
+	z-index: 10;
+	bottom: 80px;
+	left: 200px;
+	width: 10px; 
+	height: 10px;
+	border-radius: 50%;
+	background: yellow;
+	display: none;
+	border-bottom: 1px solid #000; 
+}
+
+.monster{
+	width: 245px;
+	height: 155px;
+	background: url("src/dog.png");
+	position: absolute;
+	bottom: 75px;
+	right: 140px;
+	z-index: 10;
+}
+.t2-group{
+	position: absolute;
+	bottom: 120px;
+	left: 160px;
+	z-index: 8;
+}
+.t2-list{
+	box-sizing: border-box;
+	width: 200px;
+	height: 176px;
+	font-size: 8px;
+	padding: 20px;
+	margin-right: 10px;
+	background: url("src/board.png");
+	color: white;
+	float: left;
+	overflow: hidden;
+}

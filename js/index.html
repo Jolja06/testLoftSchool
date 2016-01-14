@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LoftSchool JS</title>
+	<link rel="stylesheet" type="text/css" href="system/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="page__title">
+			<div class="logo"></div>
+			<div class="page__title__text">				
+				<h1>Проверка знаний по JS</h1>
+				<p>Для выполнения задания открой файл <strong>main.js</strong> и прочти техническое описание.</p>
+			</div>
+		</div>
+		<div class="nav nav_prev">&laquo;</div>
+		<div class="canvas">
+
+			<div class="canvas__scene canvas__scene_active" data-number="1">
+				<div class="task-num">Задание 1</div>
+				<div class="character">
+					<div class="model model_character"></div>
+					<div class="text text_character">							
+						<div class="t1-user-name"></div>
+						<div class="t1-user-age"></div>
+					</div>
+				</div>
+				<div class="teacher">
+					<div class="model model_teacher"></div>
+					<div class="text text_teacher"></div>
+				</div>
+				<button class="check">Проверить</button>
+			</div>
+
+			<div class="canvas__scene" data-number="2">
+				<div class="task-num">Задание 2</div>
+				<div class="character">
+					<div class="model model_character"></div>
+				</div>
+				<div id="coin"></div>
+				<div class="t2-group">
+					<div id="t2-list" class="t2-list">Каждый курс ведёт команда из преподавателей и наставников, которые знакомятся с каждым учеником лично и поддерживают общение. Именно такая тёплая и дружеская атмосфера позволяет новым знаниям усваиваться лучше. Личный наставник никогда не даст вам сбиться с пути или отстать от группы. </div>
+					<div id="t2-list_copy"  class="t2-list"></div>			
+				</div>
+				<div class="monster"></div>	
+				<div class="teacher">
+					<div class="model model_teacher"></div>
+					<div class="text text_teacher"></div>
+				</div>
+				<button class="check">Проверить</button>
+			</div>
+
+			<div class="canvas__scene" data-number="3">			
+				<div class="task-num">Задание 3</div>
+				<div class="character">
+					<div class="model model_character" id="character-pro"></div>
+				</div>
+				
+				<div class="teacher">
+					<div class="model model_teacher"></div>
+					<div class="text text_teacher"></div>
+				</div>
+				<button class="check">Проверить</button>
+			</div>
+
+		</div>
+		<div class="nav nav_next">&raquo;</div>
+
+
+	</div>
+	
+	
+
+	<script src="system/lib/jquery-1.11.3.min.js"></script>
+	<script src="system/vars.js"></script>
+	<!-- Подключи файл тут -->
+	<script src="main.js"></script>
+	<!-- Подключи файл тут -->
+	<script src="system/data.js"></script>
+	<script src="system/system.js"></script>
+</body>
+</html>
